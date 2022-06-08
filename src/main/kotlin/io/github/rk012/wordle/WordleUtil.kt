@@ -35,12 +35,4 @@ fun getFilter(input: String, target: String): List<Results> {
     return filter
 }
 
-/**
- * Returns the value associated with the specified key, or 0 if not present.
- *
- * @param T the type of key.
- * @param key the key whose associated value is to be returned.
- *
- * @return the value associated with the specified key, or 0 if not present.
- */
 private fun<T> Map<T, Int>.getDefault(key: T): Int = get(key) ?: 0
