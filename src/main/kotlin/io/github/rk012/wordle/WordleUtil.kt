@@ -1,12 +1,14 @@
 package io.github.rk012.wordle
 
+typealias ResultRow = List<Results>
+
 /**
  * Returns the Wordle result of a given guess with a target word.
  *
- * @param input the guess.
- * @param target the target word.
+ * @param input The guess.
+ * @param target The target word.
  *
- * @return the results.
+ * @return The results.
  *
  * @see Results
  */
@@ -35,4 +37,4 @@ fun getFilter(input: String, target: String): List<Results> {
     return filter
 }
 
-private fun<T> Map<T, Int>.getDefault(key: T): Int = get(key) ?: 0
+internal fun <T> Map<T, Int>.getDefault(key: T): Int = get(key) ?: 0

@@ -2,6 +2,7 @@ package io.github.rk012.wordle
 
 import kotlin.test.Test
 import kotlin.test.assertContains
+import kotlin.test.assertTrue
 
 class WordlistsTest {
     @Test
@@ -13,6 +14,6 @@ class WordlistsTest {
         assertContains(solution, "aback")
 
         assertContains(valid, "zeros")
-        assert("zeros" !in solution)
+        assertTrue("zeros" !in solution)
     }
 }
