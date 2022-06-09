@@ -9,6 +9,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.rk012:WordleUtil:v1.0.0")
+    implementation("com.github.rk012:WordleUtil:v1.1.0")
 }
 ```
